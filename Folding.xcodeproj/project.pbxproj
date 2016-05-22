@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 273443E31CE1CEE900049E80 /* Build configuration list for PBXProject "Holton Lee" */;
+			buildConfigurationList = 273443E31CE1CEE900049E80 /* Build configuration list for PBXProject "Folding" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -430,8 +430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Folding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ollyboon.HoltonLee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ollyboon.Folding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -442,8 +443,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Folding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ollyboon.HoltonLee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ollyboon.Folding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -451,7 +453,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		273443E31CE1CEE900049E80 /* Build configuration list for PBXProject "Holton Lee" */ = {
+		273443E31CE1CEE900049E80 /* Build configuration list for PBXProject "Folding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				273443F81CE1CEE900049E80 /* Debug */,
