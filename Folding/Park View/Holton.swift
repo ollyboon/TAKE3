@@ -1,9 +1,7 @@
 import Foundation
 import MapKit
 
-class Park {
-    var boundary: [CLLocationCoordinate2D]
-    var boundaryPointsCount: NSInteger
+class Holton {
     
     var midCoordinate: CLLocationCoordinate2D
     var overlayTopLeftCoordinate: CLLocationCoordinate2D
@@ -51,16 +49,5 @@ class Park {
         
         
         
-        
-        let boundaryPoints = properties!["boundary"] as! NSArray
-        
-        boundaryPointsCount = boundaryPoints.count
-        
-        boundary = []
-        
-        for i in 0...boundaryPointsCount-1 {
-            let p = CGPointFromString(boundaryPoints[i] as! String)
-            boundary += [CLLocationCoordinate2DMake(CLLocationDegrees(p.x), CLLocationDegrees(p.y))]
-        }
     }
 }

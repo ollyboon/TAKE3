@@ -3,9 +3,6 @@ import MapKit
 import CoreLocation
 
 
-
-
-
 enum MapType: Int {
   case Standard = 0
   case Hybrid
@@ -14,9 +11,9 @@ enum MapType: Int {
 }
 
 
-class ParkMapViewController: UIViewController {
+class MapViewController: UIViewController {
     
-    var park = Park(filename: "MagicMountain")
+    var holton = Holton(filename: "HoltonLee")
     
     var route: Route?
     
@@ -35,13 +32,12 @@ class ParkMapViewController: UIViewController {
 
         
         
-        let latDelta = park.overlayTopLeftCoordinate.latitude -
-            park.overlayBottomRightCoordinate.latitude
+        let latDelta = holton.overlayTopLeftCoordinate.latitude -
+            holton.overlayBottomRightCoordinate.latitude
         
-        // think of a span as a tv size, measure from one corner to another
         let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
         
-        let region = MKCoordinateRegionMake(park.midCoordinate, span)
+        let region = MKCoordinateRegionMake(holton.midCoordinate, span)
         
         locationManager.requestWhenInUseAuthorization()
         locationManager.delegate = self
@@ -79,14 +75,14 @@ class ParkMapViewController: UIViewController {
     
     func addPointPins() {
         let filePath = NSBundle.mainBundle().pathForResource("PointsOfInterest", ofType: "plist")
-        let attractions = NSArray(contentsOfFile: filePath!)
-        for attraction in attractions! {
-            let point = CGPointFromString(attraction["location"] as! String)
+        let interests = NSArray(contentsOfFile: filePath!)
+        for interest in interests! {
+            let point = CGPointFromString(interest["location"] as! String)
             let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(point.x), CLLocationDegrees(point.y))
-            let title = attraction["name"] as! String
-            let typeRawValue = Int(attraction["type"] as! String)!
+            let title = interest["name"] as! String
+            let typeRawValue = Int(interest["type"] as! String)!
             let type = PointOfInterest(rawValue: typeRawValue)!
-            let subtitle = attraction["subtitle"] as! String
+            let subtitle = interest["subtitle"] as! String
             let annotation = PointAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
             mapView.addAnnotation(annotation)
         }
@@ -94,7 +90,7 @@ class ParkMapViewController: UIViewController {
     
     
     func addOverlay() {
-        let overlay = ParkMapOverlay(park: park)
+        let overlay = MapOverlay(holton: holton)
         mapView.addOverlay(overlay)
     }
 
@@ -120,12 +116,12 @@ class ParkMapViewController: UIViewController {
 }
 
 
-extension ParkMapViewController: MKMapViewDelegate {
+extension MapViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
-        if overlay is ParkMapOverlay {
-            let magicMountainImage = UIImage(named: "maptree")
-            let overlayView = ParkMapOverlayView(overlay: overlay, overlayImage: magicMountainImage!)
+        if overlay is MapOverlay {
+            let holtonLeeImage = UIImage(named: "maptree")
+            let overlayView = MapOverlayView(overlay: overlay, overlayImage: holtonLeeImage!)
             
             return overlayView
         } else if overlay is MKPolyline {
@@ -144,14 +140,14 @@ extension ParkMapViewController: MKMapViewDelegate {
     }
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        let annotationView = PointAnnotationView(annotation: annotation, reuseIdentifier: "Attraction")
+        let annotationView = PointAnnotationView(annotation: annotation, reuseIdentifier: "Interest")
         annotationView.canShowCallout = true
         return annotationView
     }
     
 }
 
-extension ParkMapViewController: CLLocationManagerDelegate {
+extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         

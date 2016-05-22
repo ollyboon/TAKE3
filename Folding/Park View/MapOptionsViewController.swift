@@ -3,7 +3,6 @@ import UIKit
 enum MapOptionsType: Int {
   case MapOverlay = 0
   case MapPins
-  case MapCharacterLocation
   case MapRoute
 }
 
@@ -13,13 +12,10 @@ class MapOptionsViewController: UIViewController, UITableViewDelegate, UITableVi
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -37,9 +33,7 @@ class MapOptionsViewController: UIViewController, UITableViewDelegate, UITableVi
     case .MapOverlay:
       cell.textLabel!.text = "Map Overlay"
     case .MapPins:
-      cell.textLabel!.text = "Warning Pins"
-    case .MapCharacterLocation:
-      cell.textLabel!.text = "Person Location"
+      cell.textLabel!.text = "Pins"
     case .MapRoute:
       cell.textLabel!.text = "Route"
     }
@@ -58,7 +52,6 @@ class MapOptionsViewController: UIViewController, UITableViewDelegate, UITableVi
     let mapOptionsType = MapOptionsType(rawValue: indexPath.row)
     if (cell!.accessoryType == UITableViewCellAccessoryType.Checkmark) {
       cell!.accessoryType = UITableViewCellAccessoryType.None
-      // delete object
       selectedOptions = selectedOptions.filter { (currentOption) in currentOption != mapOptionsType}
     } else {
       cell!.accessoryType = UITableViewCellAccessoryType.Checkmark

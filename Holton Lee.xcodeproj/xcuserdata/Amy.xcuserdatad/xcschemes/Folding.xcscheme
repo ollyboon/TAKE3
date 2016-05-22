@@ -17,7 +17,7 @@
                BlueprintIdentifier = "273443E71CE1CEE900049E80"
                BuildableName = "Folding.app"
                BlueprintName = "Folding"
-               ReferencedContainer = "container:Folding.xcodeproj">
+               ReferencedContainer = "container:Holton Lee.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "273443E71CE1CEE900049E80"
             BuildableName = "Folding.app"
             BlueprintName = "Folding"
-            ReferencedContainer = "container:Folding.xcodeproj">
+            ReferencedContainer = "container:Holton Lee.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "273443E71CE1CEE900049E80"
             BuildableName = "Folding.app"
             BlueprintName = "Folding"
-            ReferencedContainer = "container:Folding.xcodeproj">
+            ReferencedContainer = "container:Holton Lee.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "273443E71CE1CEE900049E80"
             BuildableName = "Folding.app"
             BlueprintName = "Folding"
-            ReferencedContainer = "container:Folding.xcodeproj">
+            ReferencedContainer = "container:Holton Lee.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

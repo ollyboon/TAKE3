@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-class ParkMapOverlayView: MKOverlayRenderer {
+class MapOverlayView: MKOverlayRenderer {
     var overlayImage: UIImage
     
     init(overlay:MKOverlay, overlayImage:UIImage) {

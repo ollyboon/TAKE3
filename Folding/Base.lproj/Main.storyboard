@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -73,7 +73,7 @@
         <!--Map-->
         <scene sceneID="NYo-h8-5Xr">
             <objects>
-                <viewController storyboardIdentifier="ParkMapViewController" id="FvC-3f-f3K" customClass="ParkMapViewController" customModule="Folding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="FvC-3f-f3K" customClass="MapViewController" customModule="Folding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Eg-hS-yJz"/>
                         <viewControllerLayoutGuide type="bottom" id="Q2E-jk-GHC"/>
@@ -416,7 +416,7 @@
                     <size key="freeformSize" width="600" height="695"/>
                     <connections>
                         <outlet property="tableView" destination="RSU-bp-7kv" id="CPD-vl-WGY"/>
-                        <segue destination="FvC-3f-f3K" kind="show" identifier="ParkMapViewController" id="bPF-lQ-QEw"/>
+                        <segue destination="FvC-3f-f3K" kind="show" identifier="MapViewController" id="bPF-lQ-QEw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -456,7 +456,7 @@
         <image name="Signpost-50" width="25" height="25"/>
         <image name="clock" width="100" height="100"/>
         <image name="green" width="56" height="22"/>
-        <image name="mapRouteImage1" width="742" height="562"/>
+        <image name="mapRouteImage1" width="740" height="580"/>
         <image name="terrainImage1" width="500" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -42,8 +42,8 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier == "ParkMapViewController" {
-            let vc = segue.destinationViewController as! ParkMapViewController
+        if segue.identifier == "MapViewController" {
+            let vc = segue.destinationViewController as! MapViewController
             vc.route = routes[selectedRow]
         }
         
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
 extension ViewController: RouteCellDelegate {
     func buttonTapped(tag: Int) {
         selectedRow = tag
-        performSegueWithIdentifier("ParkMapViewController", sender: nil)
+        performSegueWithIdentifier("MapViewController", sender: nil)
     }
 }
 
