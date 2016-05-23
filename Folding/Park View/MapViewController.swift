@@ -24,6 +24,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
     
     let locationManager = CLLocationManager()
+    var locationsArray = [myLocation]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,34 @@ class MapViewController: UIViewController {
         
         if route != nil {
             drawRoute()
+        }
+        
+        let birdHideRoute = myLocation(coord: CLLocationCoordinate2D(latitude: 50.723313, longitude: -2.053055), regionDistance: 50, identifier: "birdHideRoute")
+        locationsArray.append(birdHideRoute)
+        
+        let deadTree = myLocation(coord: CLLocationCoordinate2D(latitude: 50.722241, longitude: -2.050978), regionDistance: 50, identifier: "deadTree")
+        locationsArray.append(deadTree)
+        
+        let stuckInARut = myLocation(coord: CLLocationCoordinate2D(latitude: 50.720192, longitude: -2.058198), regionDistance: 50, identifier: "stuckInARut")
+        locationsArray.append(stuckInARut)
+        
+        let ironAgeHut = myLocation(coord: CLLocationCoordinate2D(latitude: 50.724758, longitude: -2.057954), regionDistance: 50, identifier: "ironAgeHut")
+        locationsArray.append(ironAgeHut)
+        
+        let freeBirdSculpture = myLocation(coord: CLLocationCoordinate2D(latitude: 50.724247, longitude: -2.056046), regionDistance: 50, identifier: "freeBirdSculpture")
+        locationsArray.append(freeBirdSculpture)
+        
+        let reception = myLocation(coord: CLLocationCoordinate2D(latitude: 50.72118, longitude: -2.056483), regionDistance: 50, identifier: "reception")
+        locationsArray.append(reception)
+        
+        let potteryPavilion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.720601, longitude: -2.057801), regionDistance: 50, identifier: "potteryPavilion")
+        locationsArray.append(potteryPavilion)
+        
+        let sensoryGarden = myLocation(coord: CLLocationCoordinate2D(latitude: 50.722221, longitude: -2.054502), regionDistance: 50, identifier: "sensoryGarden")
+        locationsArray.append(sensoryGarden)
+        
+        for location in locationsArray {
+            locationManager.startMonitoringForRegion(location.region)
         }
         
     }
@@ -147,6 +176,10 @@ extension MapViewController: CLLocationManagerDelegate {
         
         if let newLocation = newLocation {
             print(newLocation)
+        }
+        
+        func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
+            
         }
         
     }

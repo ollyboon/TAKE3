@@ -26,6 +26,7 @@
 		A007FBDF1CE4CD6C00DB2615 /* Bird Hide Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC91CE4CD6C00DB2615 /* Bird Hide Path.plist */; };
 		A007FBE11CE4CD6C00DB2615 /* PointsOfInterest.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCB1CE4CD6C00DB2615 /* PointsOfInterest.plist */; };
 		A07B34DB1CE35B06000504FE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */; };
+		A08779B51CF32DCB0098CE1E /* myLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08779B41CF32DCB0098CE1E /* myLocation.swift */; };
 		A096CD7B1CEE226900F3FE45 /* The Clump Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7A1CEE226900F3FE45 /* The Clump Path.plist */; };
 		A096CD7D1CEE321D00F3FE45 /* Sea View Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7C1CEE321D00F3FE45 /* Sea View Path.plist */; };
 		A096CD7F1CF1D69200F3FE45 /* Heathland Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7E1CF1D69200F3FE45 /* Heathland Path.plist */; };
@@ -57,6 +58,7 @@
 		A007FBC91CE4CD6C00DB2615 /* Bird Hide Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bird Hide Path.plist"; sourceTree = "<group>"; };
 		A007FBCB1CE4CD6C00DB2615 /* PointsOfInterest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PointsOfInterest.plist; sourceTree = "<group>"; };
 		A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A08779B41CF32DCB0098CE1E /* myLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myLocation.swift; path = Folding/myLocation.swift; sourceTree = SOURCE_ROOT; };
 		A096CD7A1CEE226900F3FE45 /* The Clump Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "The Clump Path.plist"; sourceTree = "<group>"; };
 		A096CD7C1CEE321D00F3FE45 /* Sea View Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Sea View Path.plist"; path = "character-locations/Sea View Path.plist"; sourceTree = "<group>"; };
 		A096CD7E1CF1D69200F3FE45 /* Heathland Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Heathland Path.plist"; path = "character-locations/Heathland Path.plist"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				FBC164A61CEF351700894ED7 /* Assets.xcassets */,
 				A007FBA51CE4CA6A00DB2615 /* MapOverlayView.swift */,
 				A007FBA61CE4CA6A00DB2615 /* MapViewController.swift */,
+				A08779B41CF32DCB0098CE1E /* myLocation.swift */,
 			);
 			name = "HL View";
 			path = "Park View";
@@ -307,6 +310,7 @@
 				A007FBB31CE4CA6A00DB2615 /* MapOverlayView.swift in Sources */,
 				A007FBA91CE4CA6A00DB2615 /* PointAnnotationView.swift in Sources */,
 				A007FBB41CE4CA6A00DB2615 /* MapViewController.swift in Sources */,
+				A08779B51CF32DCB0098CE1E /* myLocation.swift in Sources */,
 				A007FBA81CE4CA6A00DB2615 /* PointAnnotation.swift in Sources */,
 				273443FE1CE1D5A000049E80 /* RouteCell.swift in Sources */,
 				A007FBB21CE4CA6A00DB2615 /* MapOverlay.swift in Sources */,
