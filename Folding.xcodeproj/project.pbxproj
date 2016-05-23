@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DF4B94105EE1DE6D55424C4 /* Pods_Folding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7AD420FB5DE737F3848360 /* Pods_Folding.framework */; };
+		273443EC1CE1CEE900049E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443EB1CE1CEE900049E80 /* AppDelegate.swift */; };
+		273443EE1CE1CEE900049E80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443ED1CE1CEE900049E80 /* ViewController.swift */; };
+		273443F11CE1CEE900049E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273443EF1CE1CEE900049E80 /* Main.storyboard */; };
+		273443F61CE1CEE900049E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273443F41CE1CEE900049E80 /* LaunchScreen.storyboard */; };
+		273443FE1CE1D5A000049E80 /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443FD1CE1D5A000049E80 /* RouteCell.swift */; };
+		273444001CE1FF1400049E80 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443FF1CE1FF1400049E80 /* Route.swift */; };
+		273444021CE202AA00049E80 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273444011CE202AA00049E80 /* MapKit.framework */; };
+		A007FBA81CE4CA6A00DB2615 /* PointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007FB981CE4CA6A00DB2615 /* PointAnnotation.swift */; };
+		A007FBA91CE4CA6A00DB2615 /* PointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007FB991CE4CA6A00DB2615 /* PointAnnotationView.swift */; };
+		A007FBAB1CE4CA6A00DB2615 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FB9B1CE4CA6A00DB2615 /* Default-568h@2x.png */; };
+		A007FBAC1CE4CA6A00DB2615 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FB9C1CE4CA6A00DB2615 /* Default.png */; };
+		A007FBAD1CE4CA6A00DB2615 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FB9D1CE4CA6A00DB2615 /* Default@2x.png */; };
+		A007FBAE1CE4CA6A00DB2615 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A007FB9E1CE4CA6A00DB2615 /* InfoPlist.strings */; };
+		A007FBAF1CE4CA6A00DB2615 /* MapOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007FBA01CE4CA6A00DB2615 /* MapOptionsViewController.swift */; };
+		A007FBB01CE4CA6A00DB2615 /* Park View-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBA11CE4CA6A00DB2615 /* Park View-Info.plist */; };
+		A007FBB11CE4CA6A00DB2615 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007FBA31CE4CA6A00DB2615 /* Park.swift */; };
+		A007FBB21CE4CA6A00DB2615 /* ParkMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007FBA41CE4CA6A00DB2615 /* ParkMapOverlay.swift */; };
+		A007FBB31CE4CA6A00DB2615 /* ParkMapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007FBA51CE4CA6A00DB2615 /* ParkMapOverlayView.swift */; };
+		A007FBB41CE4CA6A00DB2615 /* ParkMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007FBA61CE4CA6A00DB2615 /* ParkMapViewController.swift */; };
+		A007FBB61CE4CC5800DB2615 /* mapbase.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBB51CE4CC5800DB2615 /* mapbase.png */; };
+		A007FBD01CE4CD6C00DB2615 /* cog.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBB91CE4CD6C00DB2615 /* cog.png */; };
+		A007FBD11CE4CD6C00DB2615 /* firstaid.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBBA1CE4CD6C00DB2615 /* firstaid.png */; };
+		A007FBD21CE4CD6C00DB2615 /* firstaid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBBB1CE4CD6C00DB2615 /* firstaid@2x.png */; };
+		A007FBD31CE4CD6C00DB2615 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBBC1CE4CD6C00DB2615 /* food.png */; };
+		A007FBD41CE4CD6C00DB2615 /* food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBBD1CE4CD6C00DB2615 /* food@2x.png */; };
+		A007FBD51CE4CD6C00DB2615 /* ride.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBBE1CE4CD6C00DB2615 /* ride.png */; };
+		A007FBD61CE4CD6C00DB2615 /* ride@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBBF1CE4CD6C00DB2615 /* ride@2x.png */; };
+		A007FBD71CE4CD6C00DB2615 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC01CE4CD6C00DB2615 /* star.png */; };
+		A007FBD81CE4CD6C00DB2615 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC11CE4CD6C00DB2615 /* star@2x.png */; };
+		A007FBD91CE4CD6C00DB2615 /* warning2.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC21CE4CD6C00DB2615 /* warning2.png */; };
+		A007FBDA1CE4CD6C00DB2615 /* annotation-images.zip in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC31CE4CD6C00DB2615 /* annotation-images.zip */; };
+		A007FBDB1CE4CD6C00DB2615 /* BatmanLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC51CE4CD6C00DB2615 /* BatmanLocations.plist */; };
+		A007FBDC1CE4CD6C00DB2615 /* TazLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC61CE4CD6C00DB2615 /* TazLocations.plist */; };
+		A007FBDD1CE4CD6C00DB2615 /* TweetyBirdLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC71CE4CD6C00DB2615 /* TweetyBirdLocations.plist */; };
+		A007FBDE1CE4CD6C00DB2615 /* character-locations.zip in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC81CE4CD6C00DB2615 /* character-locations.zip */; };
+		A007FBDF1CE4CD6C00DB2615 /* Bird Hide Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC91CE4CD6C00DB2615 /* Bird Hide Path.plist */; };
+		A007FBE11CE4CD6C00DB2615 /* PointsOfInterest.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCB1CE4CD6C00DB2615 /* PointsOfInterest.plist */; };
+		A007FBE31CE4CD6C00DB2615 /* overlay_park.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCD1CE4CD6C00DB2615 /* overlay_park.png */; };
+		A007FBE41CE4CD6C00DB2615 /* overlay_park.svg in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */; };
+		A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */; };
+		A07B34DB1CE35B06000504FE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */; };
+		A096CD7B1CEE226900F3FE45 /* The Clump Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7A1CEE226900F3FE45 /* The Clump Path.plist */; };
+		A096CD7D1CEE321D00F3FE45 /* Sea View Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7C1CEE321D00F3FE45 /* Sea View Path.plist */; };
+		A096CD7F1CF1D69200F3FE45 /* Heathland Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7E1CF1D69200F3FE45 /* Heathland Path.plist */; };
+		A857DB1F1CED622C00B4162C /* Sensory Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A857DB1E1CED622C00B4162C /* Sensory Path.plist */; };
+		E17B1C211CF25F1C00DE46A7 /* MagicMountain.plist in Resources */ = {isa = PBXBuildFile; fileRef = E17B1C201CF25F1C00DE46A7 /* MagicMountain.plist */; };
+		FBC164A71CEF351700894ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC164A61CEF351700894ED7 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		273443E81CE1CEE900049E80 /* Folding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Folding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		273443EB1CE1CEE900049E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		273443ED1CE1CEE900049E80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		273443F01CE1CEE900049E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		273443F51CE1CEE900049E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		273443F71CE1CEE900049E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		273443FD1CE1D5A000049E80 /* RouteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
+		273443FF1CE1FF1400049E80 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		273444011CE202AA00049E80 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		549EEF622897E99FBA1E1FAD /* Pods-Folding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Folding.release.xcconfig"; path = "Pods/Target Support Files/Pods-Folding/Pods-Folding.release.xcconfig"; sourceTree = "<group>"; };
+		86E037A61EA705C93B46EBEF /* Pods-Folding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Folding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Folding/Pods-Folding.debug.xcconfig"; sourceTree = "<group>"; };
+		A007FB981CE4CA6A00DB2615 /* PointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointAnnotation.swift; sourceTree = "<group>"; };
+		A007FB991CE4CA6A00DB2615 /* PointAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointAnnotationView.swift; sourceTree = "<group>"; };
+		A007FB9B1CE4CA6A00DB2615 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A007FB9C1CE4CA6A00DB2615 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A007FB9D1CE4CA6A00DB2615 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A007FB9F1CE4CA6A00DB2615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A007FBA01CE4CA6A00DB2615 /* MapOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsViewController.swift; sourceTree = "<group>"; };
+		A007FBA11CE4CA6A00DB2615 /* Park View-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Park View-Info.plist"; sourceTree = "<group>"; };
+		A007FBA21CE4CA6A00DB2615 /* Park View-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Park View-Prefix.pch"; sourceTree = "<group>"; };
+		A007FBA31CE4CA6A00DB2615 /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		A007FBA41CE4CA6A00DB2615 /* ParkMapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkMapOverlay.swift; sourceTree = "<group>"; };
+		A007FBA51CE4CA6A00DB2615 /* ParkMapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkMapOverlayView.swift; sourceTree = "<group>"; };
+		A007FBA61CE4CA6A00DB2615 /* ParkMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkMapViewController.swift; sourceTree = "<group>"; };
+		A007FBB51CE4CC5800DB2615 /* mapbase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapbase.png; sourceTree = "<group>"; };
+		A007FBB91CE4CD6C00DB2615 /* cog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cog.png; sourceTree = "<group>"; };
+		A007FBBA1CE4CD6C00DB2615 /* firstaid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstaid.png; sourceTree = "<group>"; };
+		A007FBBB1CE4CD6C00DB2615 /* firstaid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firstaid@2x.png"; sourceTree = "<group>"; };
+		A007FBBC1CE4CD6C00DB2615 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		A007FBBD1CE4CD6C00DB2615 /* food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food@2x.png"; sourceTree = "<group>"; };
+		A007FBBE1CE4CD6C00DB2615 /* ride.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ride.png; sourceTree = "<group>"; };
+		A007FBBF1CE4CD6C00DB2615 /* ride@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ride@2x.png"; sourceTree = "<group>"; };
+		A007FBC01CE4CD6C00DB2615 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		A007FBC11CE4CD6C00DB2615 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		A007FBC21CE4CD6C00DB2615 /* warning2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning2.png; sourceTree = "<group>"; };
+		A007FBC31CE4CD6C00DB2615 /* annotation-images.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "annotation-images.zip"; sourceTree = "<group>"; };
+		A007FBC51CE4CD6C00DB2615 /* BatmanLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BatmanLocations.plist; sourceTree = "<group>"; };
+		A007FBC61CE4CD6C00DB2615 /* TazLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TazLocations.plist; sourceTree = "<group>"; };
+		A007FBC71CE4CD6C00DB2615 /* TweetyBirdLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TweetyBirdLocations.plist; sourceTree = "<group>"; };
+		A007FBC81CE4CD6C00DB2615 /* character-locations.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "character-locations.zip"; sourceTree = "<group>"; };
+		A007FBC91CE4CD6C00DB2615 /* Bird Hide Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bird Hide Path.plist"; sourceTree = "<group>"; };
+		A007FBCB1CE4CD6C00DB2615 /* PointsOfInterest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PointsOfInterest.plist; sourceTree = "<group>"; };
+		A007FBCD1CE4CD6C00DB2615 /* overlay_park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_park.png; sourceTree = "<group>"; };
+		A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = overlay_park.svg; sourceTree = "<group>"; };
+		A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay_park@2x.png"; sourceTree = "<group>"; };
+		A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A096CD7A1CEE226900F3FE45 /* The Clump Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "The Clump Path.plist"; sourceTree = "<group>"; };
+		A096CD7C1CEE321D00F3FE45 /* Sea View Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Sea View Path.plist"; path = "character-locations/Sea View Path.plist"; sourceTree = "<group>"; };
+		A096CD7E1CF1D69200F3FE45 /* Heathland Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Heathland Path.plist"; path = "character-locations/Heathland Path.plist"; sourceTree = "<group>"; };
+		A857DB1E1CED622C00B4162C /* Sensory Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sensory Path.plist"; sourceTree = "<group>"; };
+		DC7AD420FB5DE737F3848360 /* Pods_Folding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Folding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17B1C201CF25F1C00DE46A7 /* MagicMountain.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MagicMountain.plist; sourceTree = "<group>"; };
+		FBC164A61CEF351700894ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Folding/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		273443E51CE1CEE900049E80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273444021CE202AA00049E80 /* MapKit.framework in Frameworks */,
+				1DF4B94105EE1DE6D55424C4 /* Pods_Folding.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0186FD7C64B3F8615A1AFAFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86E037A61EA705C93B46EBEF /* Pods-Folding.debug.xcconfig */,
+				549EEF622897E99FBA1E1FAD /* Pods-Folding.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		273443DF1CE1CEE900049E80 = {
+			isa = PBXGroup;
+			children = (
+				273443EA1CE1CEE900049E80 /* Folding */,
+				273443E91CE1CEE900049E80 /* Products */,
+				0186FD7C64B3F8615A1AFAFD /* Pods */,
+				FC96594613C982FFD0A6D052 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		273443E91CE1CEE900049E80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				273443E81CE1CEE900049E80 /* Folding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		273443EA1CE1CEE900049E80 /* Folding */ = {
+			isa = PBXGroup;
+			children = (
+				A007FBB71CE4CD6C00DB2615 /* PVParkViewSwiftResources */,
+				A007FB961CE4CA6A00DB2615 /* Park View */,
+				A07B34DC1CE35B0B000504FE /* Extensions */,
+				273443EB1CE1CEE900049E80 /* AppDelegate.swift */,
+				273443ED1CE1CEE900049E80 /* ViewController.swift */,
+				273443EF1CE1CEE900049E80 /* Main.storyboard */,
+				273443FD1CE1D5A000049E80 /* RouteCell.swift */,
+				273443FF1CE1FF1400049E80 /* Route.swift */,
+				A007FBB51CE4CC5800DB2615 /* mapbase.png */,
+				273443F41CE1CEE900049E80 /* LaunchScreen.storyboard */,
+				273443F71CE1CEE900049E80 /* Info.plist */,
+			);
+			path = Folding;
+			sourceTree = "<group>";
+		};
+		A007FB961CE4CA6A00DB2615 /* Park View */ = {
+			isa = PBXGroup;
+			children = (
+				A007FB981CE4CA6A00DB2615 /* PointAnnotation.swift */,
+				A007FB991CE4CA6A00DB2615 /* PointAnnotationView.swift */,
+				A007FB9B1CE4CA6A00DB2615 /* Default-568h@2x.png */,
+				A007FB9C1CE4CA6A00DB2615 /* Default.png */,
+				A007FB9D1CE4CA6A00DB2615 /* Default@2x.png */,
+				A007FB9E1CE4CA6A00DB2615 /* InfoPlist.strings */,
+				A007FBA01CE4CA6A00DB2615 /* MapOptionsViewController.swift */,
+				A007FBA11CE4CA6A00DB2615 /* Park View-Info.plist */,
+				A007FBA21CE4CA6A00DB2615 /* Park View-Prefix.pch */,
+				A007FBA31CE4CA6A00DB2615 /* Park.swift */,
+				A007FBA41CE4CA6A00DB2615 /* ParkMapOverlay.swift */,
+				FBC164A61CEF351700894ED7 /* Assets.xcassets */,
+				A007FBA51CE4CA6A00DB2615 /* ParkMapOverlayView.swift */,
+				A007FBA61CE4CA6A00DB2615 /* ParkMapViewController.swift */,
+			);
+			path = "Park View";
+			sourceTree = "<group>";
+		};
+		A007FBB71CE4CD6C00DB2615 /* PVParkViewSwiftResources */ = {
+			isa = PBXGroup;
+			children = (
+				A007FBB81CE4CD6C00DB2615 /* annotation-images */,
+				A007FBC31CE4CD6C00DB2615 /* annotation-images.zip */,
+				A007FBC41CE4CD6C00DB2615 /* character-locations */,
+				A007FBC81CE4CD6C00DB2615 /* character-locations.zip */,
+				A096CD7C1CEE321D00F3FE45 /* Sea View Path.plist */,
+				A007FBC91CE4CD6C00DB2615 /* Bird Hide Path.plist */,
+				A096CD7A1CEE226900F3FE45 /* The Clump Path.plist */,
+				A857DB1E1CED622C00B4162C /* Sensory Path.plist */,
+				A096CD7E1CF1D69200F3FE45 /* Heathland Path.plist */,
+				A007FBCB1CE4CD6C00DB2615 /* PointsOfInterest.plist */,
+				E17B1C201CF25F1C00DE46A7 /* MagicMountain.plist */,
+				A007FBCD1CE4CD6C00DB2615 /* overlay_park.png */,
+				A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */,
+				A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */,
+			);
+			path = PVParkViewSwiftResources;
+			sourceTree = "<group>";
+		};
+		A007FBB81CE4CD6C00DB2615 /* annotation-images */ = {
+			isa = PBXGroup;
+			children = (
+				A007FBB91CE4CD6C00DB2615 /* cog.png */,
+				A007FBBA1CE4CD6C00DB2615 /* firstaid.png */,
+				A007FBBB1CE4CD6C00DB2615 /* firstaid@2x.png */,
+				A007FBBC1CE4CD6C00DB2615 /* food.png */,
+				A007FBBD1CE4CD6C00DB2615 /* food@2x.png */,
+				A007FBBE1CE4CD6C00DB2615 /* ride.png */,
+				A007FBBF1CE4CD6C00DB2615 /* ride@2x.png */,
+				A007FBC01CE4CD6C00DB2615 /* star.png */,
+				A007FBC11CE4CD6C00DB2615 /* star@2x.png */,
+				A007FBC21CE4CD6C00DB2615 /* warning2.png */,
+			);
+			path = "annotation-images";
+			sourceTree = "<group>";
+		};
+		A007FBC41CE4CD6C00DB2615 /* character-locations */ = {
+			isa = PBXGroup;
+			children = (
+				A007FBC51CE4CD6C00DB2615 /* BatmanLocations.plist */,
+				A007FBC61CE4CD6C00DB2615 /* TazLocations.plist */,
+				A007FBC71CE4CD6C00DB2615 /* TweetyBirdLocations.plist */,
+			);
+			path = "character-locations";
+			sourceTree = "<group>";
+		};
+		A07B34DC1CE35B0B000504FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FC96594613C982FFD0A6D052 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				273444011CE202AA00049E80 /* MapKit.framework */,
+				DC7AD420FB5DE737F3848360 /* Pods_Folding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		273443E71CE1CEE900049E80 /* Folding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273443FA1CE1CEE900049E80 /* Build configuration list for PBXNativeTarget "Folding" */;
+			buildPhases = (
+				CA05718D9BBEE502800E1656 /* Check Pods Manifest.lock */,
+				273443E41CE1CEE900049E80 /* Sources */,
+				273443E51CE1CEE900049E80 /* Frameworks */,
+				273443E61CE1CEE900049E80 /* Resources */,
+				37E54801A140B4104E00A407 /* Embed Pods Frameworks */,
+				B510186CC6FA0C3CF5EA5A67 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Folding;
+			productName = Folding;
+			productReference = 273443E81CE1CEE900049E80 /* Folding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		273443E01CE1CEE900049E80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Kyle Goslan";
+				TargetAttributes = {
+					273443E71CE1CEE900049E80 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 273443E31CE1CEE900049E80 /* Build configuration list for PBXProject "Folding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 273443DF1CE1CEE900049E80;
+			productRefGroup = 273443E91CE1CEE900049E80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				273443E71CE1CEE900049E80 /* Folding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		273443E61CE1CEE900049E80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A007FBD91CE4CD6C00DB2615 /* warning2.png in Resources */,
+				E17B1C211CF25F1C00DE46A7 /* MagicMountain.plist in Resources */,
+				A007FBB01CE4CA6A00DB2615 /* Park View-Info.plist in Resources */,
+				A007FBAD1CE4CA6A00DB2615 /* Default@2x.png in Resources */,
+				A007FBDC1CE4CD6C00DB2615 /* TazLocations.plist in Resources */,
+				A007FBDB1CE4CD6C00DB2615 /* BatmanLocations.plist in Resources */,
+				A007FBD21CE4CD6C00DB2615 /* firstaid@2x.png in Resources */,
+				A007FBB61CE4CC5800DB2615 /* mapbase.png in Resources */,
+				A007FBAE1CE4CA6A00DB2615 /* InfoPlist.strings in Resources */,
+				273443F61CE1CEE900049E80 /* LaunchScreen.storyboard in Resources */,
+				A007FBD81CE4CD6C00DB2615 /* star@2x.png in Resources */,
+				A007FBDA1CE4CD6C00DB2615 /* annotation-images.zip in Resources */,
+				A007FBE41CE4CD6C00DB2615 /* overlay_park.svg in Resources */,
+				A007FBD01CE4CD6C00DB2615 /* cog.png in Resources */,
+				FBC164A71CEF351700894ED7 /* Assets.xcassets in Resources */,
+				A007FBAB1CE4CA6A00DB2615 /* Default-568h@2x.png in Resources */,
+				A007FBDD1CE4CD6C00DB2615 /* TweetyBirdLocations.plist in Resources */,
+				A007FBDE1CE4CD6C00DB2615 /* character-locations.zip in Resources */,
+				A007FBD41CE4CD6C00DB2615 /* food@2x.png in Resources */,
+				A857DB1F1CED622C00B4162C /* Sensory Path.plist in Resources */,
+				A007FBD71CE4CD6C00DB2615 /* star.png in Resources */,
+				A007FBE31CE4CD6C00DB2615 /* overlay_park.png in Resources */,
+				A096CD7F1CF1D69200F3FE45 /* Heathland Path.plist in Resources */,
+				A007FBE11CE4CD6C00DB2615 /* PointsOfInterest.plist in Resources */,
+				273443F11CE1CEE900049E80 /* Main.storyboard in Resources */,
+				A007FBD51CE4CD6C00DB2615 /* ride.png in Resources */,
+				A007FBD61CE4CD6C00DB2615 /* ride@2x.png in Resources */,
+				A096CD7D1CEE321D00F3FE45 /* Sea View Path.plist in Resources */,
+				A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */,
+				A007FBD11CE4CD6C00DB2615 /* firstaid.png in Resources */,
+				A007FBD31CE4CD6C00DB2615 /* food.png in Resources */,
+				A007FBAC1CE4CA6A00DB2615 /* Default.png in Resources */,
+				A096CD7B1CEE226900F3FE45 /* The Clump Path.plist in Resources */,
+				A007FBDF1CE4CD6C00DB2615 /* Bird Hide Path.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37E54801A140B4104E00A407 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Folding/Pods-Folding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B510186CC6FA0C3CF5EA5A67 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Folding/Pods-Folding-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA05718D9BBEE502800E1656 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		273443E41CE1CEE900049E80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A007FBB31CE4CA6A00DB2615 /* ParkMapOverlayView.swift in Sources */,
+				A007FBA91CE4CA6A00DB2615 /* PointAnnotationView.swift in Sources */,
+				A007FBB41CE4CA6A00DB2615 /* ParkMapViewController.swift in Sources */,
+				A007FBA81CE4CA6A00DB2615 /* PointAnnotation.swift in Sources */,
+				273443FE1CE1D5A000049E80 /* RouteCell.swift in Sources */,
+				A007FBB21CE4CA6A00DB2615 /* ParkMapOverlay.swift in Sources */,
+				273444001CE1FF1400049E80 /* Route.swift in Sources */,
+				273443EE1CE1CEE900049E80 /* ViewController.swift in Sources */,
+				A007FBB11CE4CA6A00DB2615 /* Park.swift in Sources */,
+				273443EC1CE1CEE900049E80 /* AppDelegate.swift in Sources */,
+				A007FBAF1CE4CA6A00DB2615 /* MapOptionsViewController.swift in Sources */,
+				A07B34DB1CE35B06000504FE /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		273443EF1CE1CEE900049E80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				273443F01CE1CEE900049E80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		273443F41CE1CEE900049E80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				273443F51CE1CEE900049E80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A007FB9E1CE4CA6A00DB2615 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A007FB9F1CE4CA6A00DB2615 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		273443F81CE1CEE900049E80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		273443F91CE1CEE900049E80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		273443FB1CE1CEE900049E80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E037A61EA705C93B46EBEF /* Pods-Folding.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Folding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.kylegoslan.Folding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		273443FC1CE1CEE900049E80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549EEF622897E99FBA1E1FAD /* Pods-Folding.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Folding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.kylegoslan.Folding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		273443E31CE1CEE900049E80 /* Build configuration list for PBXProject "Folding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273443F81CE1CEE900049E80 /* Debug */,
+				273443F91CE1CEE900049E80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		273443FA1CE1CEE900049E80 /* Build configuration list for PBXNativeTarget "Folding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273443FB1CE1CEE900049E80 /* Debug */,
+				273443FC1CE1CEE900049E80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 273443E01CE1CEE900049E80 /* Project object */;
+}

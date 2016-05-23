@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Reception</string>
+		<key>location</key>
+		<string>{50.72118,-2.056483}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Start point for all routes</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Toilets</string>
+		<key>location</key>
+		<string>{50.720052,-2.058281}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bird Hide</string>
+		<key>location</key>
+		<string>{50.723313,-2.053055}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sea View Point</string>
+		<key>location</key>
+		<string>{50.72102,-2.047637}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Iron Age Hut</string>
+		<key>location</key>
+		<string>{50.724758,-2.057954}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Spinal Care Facility</string>
+		<key>location</key>
+		<string>{50.720611,-2.056973}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Parking</string>
+		<key>location</key>
+		<string>{50.720886,-2.057525}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Freebird Sculpture</string>
+		<key>location</key>
+		<string>{50.724247,-2.056046}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Woodland &amp; Gateway Cottages</string>
+		<key>location</key>
+		<string>{50.724771,-2.064907}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Stuck In A Rut Sculptures</string>
+		<key>location</key>
+		<string>{50.720211,-2.05825}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Clump Path Seating</string>
+		<key>location</key>
+		<string>{50.722188,-2.05109}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

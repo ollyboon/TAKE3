@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>FoldingCell.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-Folding.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pulsator.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>44D04613A7591446E9F604C26C55657F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8BDC467722BB34F6A3BC67089CE94C4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D05BFD7E2346FD36DBBD38CD98DAC434</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F60442661DC22A03BE7F787F5504716C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
