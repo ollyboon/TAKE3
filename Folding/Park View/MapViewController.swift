@@ -22,8 +22,6 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
   
     @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
-  
-    var selectedOptions = [MapOptionsType]()
     
     let locationManager = CLLocationManager()
     
@@ -95,12 +93,6 @@ class MapViewController: UIViewController {
     }
 
     
-  
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    let optionsViewController = segue.destinationViewController as! MapOptionsViewController
-    optionsViewController.selectedOptions = selectedOptions
-  }
-  
   
   @IBAction func mapTypeChanged(sender: AnyObject) {
     let mapType = MapType(rawValue: mapTypeSegmentedControl.selectedSegmentIndex)
