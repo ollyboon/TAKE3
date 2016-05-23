@@ -14,7 +14,7 @@ enum PointOfInterest: Int {
     case Parking
 }
 
-//work by amy
+//work by Kyle
 
 class PointAnnotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
