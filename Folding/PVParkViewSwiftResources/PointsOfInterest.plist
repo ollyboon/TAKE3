@@ -18,7 +18,7 @@
 		<key>location</key>
 		<string>{50.720052,-2.058281}</string>
 		<key>type</key>
-		<string>1</string>
+		<string>2</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>
@@ -28,7 +28,7 @@
 		<key>location</key>
 		<string>{50.723313,-2.053055}</string>
 		<key>type</key>
-		<string>1</string>
+		<string>3</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>location</key>
 		<string>{50.72102,-2.047637}</string>
 		<key>type</key>
-		<string>1</string>
+		<string>4</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>
@@ -48,7 +48,7 @@
 		<key>location</key>
 		<string>{50.724758,-2.057954}</string>
 		<key>type</key>
-		<string>1</string>
+		<string>5</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>
@@ -58,7 +58,7 @@
 		<key>location</key>
 		<string>{50.720611,-2.056973}</string>
 		<key>type</key>
-		<string>1</string>
+		<string>5</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>
@@ -68,7 +68,7 @@
 		<key>location</key>
 		<string>{50.720886,-2.057525}</string>
 		<key>type</key>
-		<string>1</string>
+		<string>7</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>
@@ -78,7 +78,7 @@
 		<key>location</key>
 		<string>{50.724247,-2.056046}</string>
 		<key>type</key>
-		<string>1</string>
+		<string>5</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>
@@ -88,17 +88,7 @@
 		<key>location</key>
 		<string>{50.724771,-2.064907}</string>
 		<key>type</key>
-		<string>1</string>
-		<key>subtitle</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Stuck In A Rut Sculptures</string>
-		<key>location</key>
-		<string>{50.720211,-2.05825}</string>
-		<key>type</key>
-		<string>1</string>
+		<string>5</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>
@@ -108,7 +98,7 @@
 		<key>location</key>
 		<string>{50.722188,-2.05109}</string>
 		<key>type</key>
-		<string>1</string>
+		<string>5</string>
 		<key>subtitle</key>
 		<string></string>
 	</dict>

@@ -15,22 +15,22 @@ class PointAnnotationView: MKAnnotationView {
         let pointAnnotation = self.annotation as! PointAnnotation
         switch (pointAnnotation.type) {
         case .Reception:
-            image = UIImage(named: "pin")
+            image = UIImage(named: "reception")
         case .Toilets:
-            image = UIImage(named: "pin")
+            image = UIImage(named: "toilets")
         case .BirdHide:
-            image = UIImage(named: "pin")
+            image = UIImage(named: "birdhide")
         case .ViewPoint:
-            image = UIImage(named: "pin")
+            image = UIImage(named: "viewpoint")
         case .IronAgeHut:
             image = UIImage(named: "pin")
         case .SpinalCareFacility:
             image = UIImage(named: "pin")
         case .Parking:
-            image = UIImage(named: "pin")
+            image = UIImage(named: "parking")
 
         default:
-            image = UIImage(named: "")
+            image = UIImage(named: "pin")
         }
     }
 }
