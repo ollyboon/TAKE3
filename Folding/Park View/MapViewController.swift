@@ -124,19 +124,6 @@ class MapViewController: UIViewController {
         mapView.addOverlay(overlay)
     }
 
-    
-  
-  @IBAction func mapTypeChanged(sender: AnyObject) {
-    let mapType = MapType(rawValue: mapTypeSegmentedControl.selectedSegmentIndex)
-    switch (mapType!) {
-    case .Standard:
-        mapView.mapType = MKMapType.Standard
-    case .Hybrid:
-        mapView.mapType = MKMapType.Hybrid
-    case .Satellite:
-        mapView.mapType = MKMapType.Satellite
-    }
-  }
 }
 
 
