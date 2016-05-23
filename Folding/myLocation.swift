@@ -17,13 +17,12 @@ class myLocation {
     var regionDistance: Double!
     
     var region: CLCircularRegion {
-        return CLCircularRegion(center: coord, radius: regionDistance, identifier: identifier)
+        return CLCircularRegion(center: coord, radius: 100, identifier: identifier)
     
     }
     
-    init(coord: CLLocationCoordinate2D, regionDistance: Double, identifier: String){
+    init(coord: CLLocationCoordinate2D, identifier: String){
         self.coord = coord
-        self.regionDistance = regionDistance
         self.identifier = identifier
     
     }
