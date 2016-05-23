@@ -19,6 +19,7 @@ class MapViewController: UIViewController {
     
     var color: UIColor!
     
+    @IBOutlet weak var birdHideImg: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
   
     @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
@@ -50,8 +51,8 @@ class MapViewController: UIViewController {
             drawRoute()
         }
         
-        let birdHideRoute = myLocation(coord: CLLocationCoordinate2D(latitude: 50.723313, longitude: -2.053055), regionDistance: 50, identifier: "birdHideRoute")
-        locationsArray.append(birdHideRoute)
+        let birdHide = myLocation(coord: CLLocationCoordinate2D(latitude: 50.723313, longitude: -2.053055), regionDistance: 50, identifier: "birdHide")
+        locationsArray.append(birdHide)
         
         let deadTree = myLocation(coord: CLLocationCoordinate2D(latitude: 50.722241, longitude: -2.050978), regionDistance: 50, identifier: "deadTree")
         locationsArray.append(deadTree)
@@ -175,12 +176,24 @@ extension MapViewController: CLLocationManagerDelegate {
         let newLocation = locations.last
         
         if let newLocation = newLocation {
-            print(newLocation)
+            
         }
         
         func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
             
+            if region.identifier == "birdHide" {
+                
+                birdHideImg.image = UIImage(named:"Splash Screen")
+                birdHideImg.frame = CGRect(x: 0.0, y: 0.0, width: 375.0, height: 650.0)
+                view.addSubview(birdHideImg)
+                
+            }
+            
         }
+        
+    }
+    
+    func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){
         
     }
     
