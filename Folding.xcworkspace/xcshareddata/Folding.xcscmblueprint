@@ -1,18 +1,20 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "818C207BCE8C6E7FF274B9B5BBA514EB6F340B73",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "818C207BCE8C6E7FF274B9B5BBA514EB6F340B73+++D14F76D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "27FEB186E7F55EA3805322165C788A678B0198A3" : 0,
-    "818C207BCE8C6E7FF274B9B5BBA514EB6F340B73" : 0,
-    "06A41072ACFC550E9B4105415D55BDC3F8D9884E" : 0
+    "06A41072ACFC550E9B4105415D55BDC3F8D9884E+++268C591" : 0,
+    "27FEB186E7F55EA3805322165C788A678B0198A3+++F273336" : 0,
+    "818C207BCE8C6E7FF274B9B5BBA514EB6F340B73+++D14F76D" : 0,
+    "2523CDCE56BD9B82BD07D46ABB4CD6F090006149+++ED15DE9" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1BE0CA12-77BF-4D31-A5DB-AA5E79E9B58B",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "27FEB186E7F55EA3805322165C788A678B0198A3" : "HoltonLee\/",
-    "818C207BCE8C6E7FF274B9B5BBA514EB6F340B73" : "TAKE3\/",
-    "06A41072ACFC550E9B4105415D55BDC3F8D9884E" : "MASTER\/"
+    "06A41072ACFC550E9B4105415D55BDC3F8D9884E+++268C591" : "MASTER\/",
+    "27FEB186E7F55EA3805322165C788A678B0198A3+++F273336" : "HoltonLee\/",
+    "818C207BCE8C6E7FF274B9B5BBA514EB6F340B73+++D14F76D" : "TAKE3\/",
+    "2523CDCE56BD9B82BD07D46ABB4CD6F090006149+++ED15DE9" : "HoltonLee\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Folding",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -21,22 +23,22 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hallamager\/MASTER.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "06A41072ACFC550E9B4105415D55BDC3F8D9884E"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "06A41072ACFC550E9B4105415D55BDC3F8D9884E+++268C591"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ollyboon\/HoltonLee.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "27FEB186E7F55EA3805322165C788A678B0198A3"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2523CDCE56BD9B82BD07D46ABB4CD6F090006149+++ED15DE9"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hallamager\/HoltonLee.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "27FEB186E7F55EA3805322165C788A678B0198A3"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "27FEB186E7F55EA3805322165C788A678B0198A3+++F273336"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ollyboon\/TAKE3.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "818C207BCE8C6E7FF274B9B5BBA514EB6F340B73"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "818C207BCE8C6E7FF274B9B5BBA514EB6F340B73+++D14F76D"
     }
   ]
 }

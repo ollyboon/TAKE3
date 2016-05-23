@@ -43,6 +43,9 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
+        mapView.setUserTrackingMode(.Follow, animated: true)
+
+        
         mapView.region = region
         addOverlay()
         addPointPins()
