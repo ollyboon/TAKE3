@@ -237,7 +237,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="20 MINS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S07-re-5ii">
-                                                                    <rect key="frame" x="25" y="29" width="158" height="50"/>
+                                                                    <rect key="frame" x="25" y="29" width="269" height="50"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
                                                                     <color key="textColor" red="0.47450980392156861" green="0.85882352941176465" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -246,7 +246,7 @@
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstItem="o93-0Q-jJ0" firstAttribute="top" secondItem="S07-re-5ii" secondAttribute="bottom" id="2xY-x4-hle"/>
-                                                                <constraint firstItem="xhE-Ob-ERv" firstAttribute="trailing" secondItem="S07-re-5ii" secondAttribute="trailing" constant="-77" id="FBz-mV-OrK"/>
+                                                                <constraint firstItem="xhE-Ob-ERv" firstAttribute="trailing" secondItem="S07-re-5ii" secondAttribute="trailing" constant="-188" id="FBz-mV-OrK"/>
                                                                 <constraint firstItem="xhE-Ob-ERv" firstAttribute="leading" secondItem="S07-re-5ii" secondAttribute="leading" constant="1" id="Fg2-2P-VlN"/>
                                                                 <constraint firstItem="o93-0Q-jJ0" firstAttribute="top" secondItem="h1y-Jp-hr2" secondAttribute="top" constant="79" id="UEB-c1-Kps"/>
                                                                 <constraint firstItem="o93-0Q-jJ0" firstAttribute="leading" secondItem="h1y-Jp-hr2" secondAttribute="leading" id="UfB-xd-20q"/>

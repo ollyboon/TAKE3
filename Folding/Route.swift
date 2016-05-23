@@ -36,7 +36,7 @@ func buildRoutes() -> [Route] {
 
     routes.append(Route(name: "Sensory Path",
         foldingName: "Sensory Path",
-        duration: "15 Mins",
+        duration: "15 minutes",
         info: "Stimulating the senses, taking you through a variety of habitats",
         terrainInfo: "Variable path surface, some grassed areas",
         terrainImage: "terrainImage1",
@@ -47,7 +47,7 @@ func buildRoutes() -> [Route] {
     )
     routes.append(Route(name: "Bird Hide Path",
         foldingName: "Bird Hide Path",
-        duration: "5 Mins",
+        duration: "5 minutes",
         info: "Take a journey to the Bird hide, an ideal place to view the varied bird species of Holton Lee",
         terrainInfo: "Variable path surface, some wet areas",
         terrainImage: "terrainImage1",
@@ -58,7 +58,7 @@ func buildRoutes() -> [Route] {
     )
     routes.append(Route(name: "The Clump Path",
         foldingName: "The Clump Path",
-        duration: "10 Mins",
+        duration: "10 minutes",
         info: "Enjoy a walk to the Clump, with stunning views and our impressive weaving tree",
         terrainInfo: "Variable path surface, some dry areas",
         terrainImage: "terrainImage1",
@@ -69,7 +69,7 @@ func buildRoutes() -> [Route] {
     )
     routes.append(Route(name: "Sea View Path",
         foldingName: "Sea View Path",
-        duration: "15 Mins",
+        duration: "15 minutes",
         info: "A trail leading you to the sea, with a great vantage point",
         terrainInfo: "Variable path surface, some muddy areas",
         terrainImage: "terrainImage1",
@@ -80,7 +80,7 @@ func buildRoutes() -> [Route] {
     )
     routes.append(Route(name: "Heathland Path",
         foldingName: "Heathland Path",
-        duration: "25 Mins",
+        duration: "25 minutes",
         info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some epic areas",
         terrainImage: "terrainImage1",
