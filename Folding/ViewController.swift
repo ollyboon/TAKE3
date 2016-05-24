@@ -29,6 +29,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 74.0/255.0, green: 194.0/255.0, blue: 225.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor(red: 74.0/255.0, green: 194.0/255.0, blue: 225.0/255.0, alpha: 1.0)
     
         for _ in 0...routes.count {
             cellHeights.append(kCloseCellHeight)

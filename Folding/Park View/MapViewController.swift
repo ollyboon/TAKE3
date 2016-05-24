@@ -29,7 +29,9 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 74.0/255.0, green: 194.0/255.0, blue: 225.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor(red: 74.0/255.0, green: 194.0/255.0, blue: 225.0/255.0, alpha: 1.0)
         
         let latDelta = holton.overlayTopLeftCoordinate.latitude -
             holton.overlayBottomRightCoordinate.latitude
@@ -126,6 +128,7 @@ class MapViewController: UIViewController {
         let overlay = MapOverlay(holton: holton)
         mapView.addOverlay(overlay)
     }
+    
 
 }
 
@@ -144,11 +147,6 @@ extension MapViewController: MKMapViewDelegate {
             lineView.lineWidth = 11.0
             
             return lineView
-        } else if overlay is MKPolygon {
-            let polygonView = MKPolygonRenderer(overlay: overlay)
-            polygonView.strokeColor = UIColor.magentaColor()
-            
-            return polygonView
         }
         return MKOverlayRenderer()
     }

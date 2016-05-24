@@ -2,16 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "toilets.png",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
+      "filename" : "toilets@2x.png",
       "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
     }
   ],
   "info" : {
