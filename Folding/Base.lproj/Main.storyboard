@@ -89,7 +89,10 @@
                                 </connections>
                             </mapView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ojl-Q2-Qa1">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="695"/>
+                                <rect key="frame" x="0.0" y="314" width="600" height="381"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="381" id="bre-jK-EAc"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,7 +101,7 @@
                             <constraint firstAttribute="trailing" secondItem="fmU-bw-GXo" secondAttribute="trailing" id="P0J-rm-MmE"/>
                             <constraint firstItem="fmU-bw-GXo" firstAttribute="leading" secondItem="SN3-mX-tfi" secondAttribute="leading" id="fHV-N9-mbU"/>
                             <constraint firstAttribute="bottom" secondItem="ojl-Q2-Qa1" secondAttribute="bottom" id="gFq-Zv-7nP"/>
-                            <constraint firstItem="ojl-Q2-Qa1" firstAttribute="top" secondItem="fmU-bw-GXo" secondAttribute="top" constant="-64" id="gw9-Dk-x9r"/>
+                            <constraint firstItem="ojl-Q2-Qa1" firstAttribute="top" secondItem="fmU-bw-GXo" secondAttribute="top" constant="250" id="gw9-Dk-x9r"/>
                             <constraint firstItem="fmU-bw-GXo" firstAttribute="top" secondItem="6Eg-hS-yJz" secondAttribute="bottom" id="ocA-Nw-y34"/>
                             <constraint firstItem="ojl-Q2-Qa1" firstAttribute="leading" secondItem="fmU-bw-GXo" secondAttribute="leading" id="uTi-P7-QMT"/>
                             <constraint firstItem="fmU-bw-GXo" firstAttribute="bottom" secondItem="Q2E-jk-GHC" secondAttribute="top" id="x0o-xc-1N9"/>

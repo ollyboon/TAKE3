@@ -44,7 +44,6 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
 
-        mapView.setUserTrackingMode(.Follow, animated: true)
         mapView.region = mapregion
         
         addOverlay()
@@ -54,6 +53,7 @@ class MapViewController: UIViewController {
             drawRoute()
         }
         
+        mapView.setUserTrackingMode(.Follow, animated: true)
         
         
         let birdHideRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.723313, longitude: -2.053055), identifier: "birdHideRegion")
@@ -181,30 +181,19 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
         print(region.identifier)
         
-        
             birdHideImg.image = UIImage(named: region.identifier)
             
             birdHideImg.alpha = 0
-            UIView.animateWithDuration(2.0){
-                self.birdHideImg.alpha = 1
+            UIView.animateWithDuration(1.0){
+                self.birdHideImg.alpha = 0.92
                 
-        
-        
-        
         
         }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){
         
-        birdHideImg.image = UIImage(named: region.identifier)
+        birdHideImg.image = nil
         
-        birdHideImg.alpha = 1
-        UIView.animateWithDuration(2.0){
-            self.birdHideImg.alpha = 0
-        
-        
-        
-            }
     
         }
     }
