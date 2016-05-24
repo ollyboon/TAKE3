@@ -22,7 +22,6 @@
                         <segue destination="iek-P3-M4U" kind="relationship" relationship="viewControllers" id="h1a-O2-mge"/>
                         <segue destination="Lp8-Ml-FCM" kind="relationship" relationship="viewControllers" id="Ctk-be-frS"/>
                         <segue destination="jXR-tv-5jS" kind="relationship" relationship="viewControllers" id="rFd-8k-KwI"/>
-                        <segue destination="W42-Hu-UBx" kind="relationship" relationship="viewControllers" id="Cbh-hJ-htV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLX-86-1BE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -425,56 +424,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1245" y="-180.5"/>
-        </scene>
-        <!--Regions-->
-        <scene sceneID="8bY-sJ-7H2">
-            <objects>
-                <viewController title="Regions" id="VTv-0f-tUG" customClass="RegionsViewController" customModule="Folding" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sz1-pN-ynk"/>
-                        <viewControllerLayoutGuide type="bottom" id="k1l-yw-jFG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ecv-Bs-8bn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-xs-gIM">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="a9E-xs-gIM" firstAttribute="bottom" secondItem="k1l-yw-jFG" secondAttribute="top" id="4GY-fh-MLN"/>
-                            <constraint firstItem="a9E-xs-gIM" firstAttribute="top" secondItem="sz1-pN-ynk" secondAttribute="bottom" id="Hj0-Bm-8hM"/>
-                            <constraint firstItem="a9E-xs-gIM" firstAttribute="leading" secondItem="Ecv-Bs-8bn" secondAttribute="leading" id="KVp-HC-VyG"/>
-                            <constraint firstAttribute="trailing" secondItem="a9E-xs-gIM" secondAttribute="trailing" id="xrl-M3-Nft"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="k5D-Vc-n6X"/>
-                    <connections>
-                        <outlet property="mapView" destination="a9E-xs-gIM" id="YMv-Qu-uwN"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O8T-Q3-Qip" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1214" y="-918"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="JC4-kX-ABg">
-            <objects>
-                <navigationController id="W42-Hu-UBx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="xit-7B-RAi"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dkL-Xp-TPF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="VTv-0f-tUG" kind="relationship" relationship="rootViewController" id="yE4-Nf-Lqu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zjK-0F-9Wh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="475" y="-910"/>
         </scene>
         <!--Routes-->
         <scene sceneID="dcv-iD-HBb">
