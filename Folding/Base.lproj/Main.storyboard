@@ -462,7 +462,7 @@
         <image name="Sensory Path" width="300" height="300"/>
         <image name="Signpost-50" width="25" height="25"/>
         <image name="green" width="56" height="22"/>
-        <image name="mapRouteImage1" width="740" height="580"/>
+        <image name="mapRouteImage1" width="347" height="223"/>
         <image name="terrainImage1" width="1000" height="77"/>
     </resources>
     <inferredMetricsTieBreakers>

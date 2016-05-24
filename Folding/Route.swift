@@ -72,6 +72,7 @@ func buildRoutes() -> [Route] {
         color: UIColor(redX: 89, greenX: 137, blueX: 35, alphaX: 1),
         colorDiff: "green",
         terrainType: "Flat Terrain"
+
         )
     )
     routes.append(Route(name: "The Clump Path",
