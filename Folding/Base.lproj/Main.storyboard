@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -88,15 +88,19 @@
                                     <outlet property="delegate" destination="FvC-3f-f3K" id="GhM-gN-ibf"/>
                                 </connections>
                             </mapView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojl-Q2-Qa1">
-                                <rect key="frame" x="0.0" y="64" width="600" height="631"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ojl-Q2-Qa1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="695"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ojl-Q2-Qa1" firstAttribute="trailing" secondItem="fmU-bw-GXo" secondAttribute="trailing" id="8wI-8D-6ki"/>
                             <constraint firstAttribute="trailing" secondItem="fmU-bw-GXo" secondAttribute="trailing" id="P0J-rm-MmE"/>
                             <constraint firstItem="fmU-bw-GXo" firstAttribute="leading" secondItem="SN3-mX-tfi" secondAttribute="leading" id="fHV-N9-mbU"/>
+                            <constraint firstAttribute="bottom" secondItem="ojl-Q2-Qa1" secondAttribute="bottom" id="gFq-Zv-7nP"/>
+                            <constraint firstItem="ojl-Q2-Qa1" firstAttribute="top" secondItem="fmU-bw-GXo" secondAttribute="top" constant="-64" id="gw9-Dk-x9r"/>
                             <constraint firstItem="fmU-bw-GXo" firstAttribute="top" secondItem="6Eg-hS-yJz" secondAttribute="bottom" id="ocA-Nw-y34"/>
+                            <constraint firstItem="ojl-Q2-Qa1" firstAttribute="leading" secondItem="fmU-bw-GXo" secondAttribute="leading" id="uTi-P7-QMT"/>
                             <constraint firstItem="fmU-bw-GXo" firstAttribute="bottom" secondItem="Q2E-jk-GHC" secondAttribute="top" id="x0o-xc-1N9"/>
                         </constraints>
                     </view>

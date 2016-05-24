@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "little egret.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "birdHideRoute.png",
       "scale" : "2x"
     },
     {
