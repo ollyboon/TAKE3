@@ -182,23 +182,33 @@ extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
         print(region.identifier)
-        birdHideImg.image = UIImage(named: region.identifier)
         
-        self.birdHideImg.center.y = self.birdHideImg.center.x - 700
         
-    }
+            birdHideImg.image = UIImage(named: region.identifier)
+            
+            birdHideImg.alpha = 0
+            UIView.animateWithDuration(2.0){
+                self.birdHideImg.alpha = 1
+                
+        
+        
+        
+        
+        }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){
-//        birdHideImg.image = nil
         
-        self.birdHideImg.center.y = self.birdHideImg.center.x + 700
+        birdHideImg.image = UIImage(named: region.identifier)
+        
+        birdHideImg.alpha = 1
+        UIView.animateWithDuration(2.0){
+            self.birdHideImg.alpha = 0
         
         
         
-    }
+            }
     
+        }
+    }
+
 }
-
-
-
-
