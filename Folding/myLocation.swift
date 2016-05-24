@@ -14,7 +14,6 @@ class myLocation {
     
     var coord: CLLocationCoordinate2D!
     var identifier: String!
-    var regionDistance: Double!
     
     var region: CLCircularRegion {
         return CLCircularRegion(center: coord, radius: 200, identifier: identifier)

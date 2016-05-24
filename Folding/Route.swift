@@ -33,6 +33,18 @@ class Route {
 
 func buildRoutes() -> [Route] {
     var routes = [Route]()
+    
+    routes.append(Route(name: "Heathland Path",
+        foldingName: "Heathland Path",
+        duration: "25 minutes",
+        info: "Take a journey through the estate's varied environments",
+        terrainInfo: "Variable path surface, some epic areas",
+        terrainImage: "heathlandterrain",
+        mapRouteImage: "mapRouteImage5",
+        color: UIColor(redX: 241, greenX: 95, blueX: 140, alphaX: 1),
+        colorDiff: "red"
+        )
+    )
 
     routes.append(Route(name: "Sensory Path",
         foldingName: "Sensory Path",
@@ -78,17 +90,7 @@ func buildRoutes() -> [Route] {
         colorDiff: "orange"
         )
     )
-    routes.append(Route(name: "Heathland Path",
-        foldingName: "Heathland Path",
-        duration: "25 minutes",
-        info: "Take a journey through the estate's varied environments",
-        terrainInfo: "Variable path surface, some epic areas",
-        terrainImage: "heathlandterrain",
-        mapRouteImage: "mapRouteImage5",
-        color: UIColor(redX: 241, greenX: 95, blueX: 140, alphaX: 1),
-        colorDiff: "red"
-        )
-    )
+
     
     return routes
 }
