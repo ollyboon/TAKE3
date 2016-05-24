@@ -128,7 +128,18 @@
                     <view key="view" contentMode="scaleToFill" id="eoP-TM-rSz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="NTx-tz-jSp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NTx-tz-jSp" firstAttribute="leading" secondItem="eoP-TM-rSz" secondAttribute="leading" id="8Jp-i1-adV"/>
+                            <constraint firstItem="NTx-tz-jSp" firstAttribute="top" secondItem="eoP-TM-rSz" secondAttribute="topMargin" id="NnR-Sb-U13"/>
+                            <constraint firstAttribute="bottom" secondItem="NTx-tz-jSp" secondAttribute="bottom" id="P2D-k4-LIa"/>
+                            <constraint firstAttribute="trailing" secondItem="NTx-tz-jSp" secondAttribute="trailing" id="WFB-gQ-oQ6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="c0Y-Qp-sgt"/>
                 </viewController>
@@ -464,6 +475,7 @@
         <image name="Map Marker-50" width="25" height="25"/>
         <image name="Sensory Path" width="300" height="300"/>
         <image name="Signpost-50" width="25" height="25"/>
+        <image name="about" width="375" height="667"/>
         <image name="green" width="56" height="22"/>
         <image name="mapRouteImage1" width="347" height="223"/>
         <image name="terrainImage1" width="1000" height="77"/>
