@@ -177,6 +177,8 @@ extension MapViewController: CLLocationManagerDelegate {
         print(region.identifier)
         birdHideImg.image = UIImage(named: region.identifier)
         
+        
+        
     }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){

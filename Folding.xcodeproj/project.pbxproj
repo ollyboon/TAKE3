@@ -62,6 +62,7 @@
 		A08779B61CF342140098CE1E /* heathlandPath.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = heathlandPath.gpx; sourceTree = "<group>"; };
 		A08779B71CF3469F0098CE1E /* sensoryPath.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sensoryPath.gpx; sourceTree = "<group>"; };
 		A08779B81CF349AA0098CE1E /* seaViewPath.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = seaViewPath.gpx; sourceTree = "<group>"; };
+		A08779B91CF490160098CE1E /* clumpPath.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = clumpPath.gpx; path = ../PVParkViewSwiftResources/clumpPath.gpx; sourceTree = "<group>"; };
 		A096CD7A1CEE226900F3FE45 /* The Clump Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "The Clump Path.plist"; sourceTree = "<group>"; };
 		A096CD7C1CEE321D00F3FE45 /* Sea View Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Sea View Path.plist"; path = "character-locations/Sea View Path.plist"; sourceTree = "<group>"; };
 		A096CD7E1CF1D69200F3FE45 /* Heathland Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Heathland Path.plist"; path = "character-locations/Heathland Path.plist"; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 				A08779B41CF32DCB0098CE1E /* myLocation.swift */,
 				A08779B61CF342140098CE1E /* heathlandPath.gpx */,
 				FBB0B6491CF33BA00051868D /* birdHideWalk.gpx */,
+				A08779B91CF490160098CE1E /* clumpPath.gpx */,
 				A08779B81CF349AA0098CE1E /* seaViewPath.gpx */,
 				A08779B71CF3469F0098CE1E /* sensoryPath.gpx */,
 			);
