@@ -32,7 +32,7 @@
 		A096CD7F1CF1D69200F3FE45 /* Heathland Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7E1CF1D69200F3FE45 /* Heathland Path.plist */; };
 		A857DB1F1CED622C00B4162C /* Sensory Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A857DB1E1CED622C00B4162C /* Sensory Path.plist */; };
 		E17B1C211CF25F1C00DE46A7 /* HoltonLee.plist in Resources */ = {isa = PBXBuildFile; fileRef = E17B1C201CF25F1C00DE46A7 /* HoltonLee.plist */; };
-		FBC164A71CEF351700894ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC164A61CEF351700894ED7 /* Assets.xcassets */; };
+		FB0D769E1CF4823A0090E76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0D769D1CF4823A0090E76C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +68,8 @@
 		A857DB1E1CED622C00B4162C /* Sensory Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sensory Path.plist"; sourceTree = "<group>"; };
 		DC7AD420FB5DE737F3848360 /* Pods_Folding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Folding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17B1C201CF25F1C00DE46A7 /* HoltonLee.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HoltonLee.plist; sourceTree = "<group>"; };
+		FB0D769D1CF4823A0090E76C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Folding/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		FBB0B6491CF33BA00051868D /* birdHideWalk.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = birdHideWalk.gpx; sourceTree = "<group>"; };
-		FBC164A61CEF351700894ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Folding/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,12 +134,12 @@
 		A007FB961CE4CA6A00DB2615 /* HL View */ = {
 			isa = PBXGroup;
 			children = (
+				FB0D769D1CF4823A0090E76C /* Assets.xcassets */,
 				A007FB981CE4CA6A00DB2615 /* PointAnnotation.swift */,
 				A007FB991CE4CA6A00DB2615 /* PointAnnotationView.swift */,
 				A007FBA01CE4CA6A00DB2615 /* MapOptionsViewController.swift */,
 				A007FBA31CE4CA6A00DB2615 /* Holton.swift */,
 				A007FBA41CE4CA6A00DB2615 /* MapOverlay.swift */,
-				FBC164A61CEF351700894ED7 /* Assets.xcassets */,
 				A007FBA51CE4CA6A00DB2615 /* MapOverlayView.swift */,
 				A007FBA61CE4CA6A00DB2615 /* MapViewController.swift */,
 				A08779B41CF32DCB0098CE1E /* myLocation.swift */,
@@ -248,8 +248,8 @@
 			files = (
 				E17B1C211CF25F1C00DE46A7 /* HoltonLee.plist in Resources */,
 				A007FBB61CE4CC5800DB2615 /* mapbase.png in Resources */,
+				FB0D769E1CF4823A0090E76C /* Assets.xcassets in Resources */,
 				273443F61CE1CEE900049E80 /* LaunchScreen.storyboard in Resources */,
-				FBC164A71CEF351700894ED7 /* Assets.xcassets in Resources */,
 				A857DB1F1CED622C00B4162C /* Sensory Path.plist in Resources */,
 				A096CD7F1CF1D69200F3FE45 /* Heathland Path.plist in Resources */,
 				A007FBE11CE4CD6C00DB2615 /* PointsOfInterest.plist in Resources */,

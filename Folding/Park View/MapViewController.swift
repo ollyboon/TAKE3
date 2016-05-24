@@ -52,40 +52,36 @@ class MapViewController: UIViewController {
             drawRoute()
         }
         
-//        let location = CLLocationCoordinate2D(latitude: 50.723313, longitude: -2.053055)
-//        let region = CLCircularRegion(center: location, radius: 200, identifier: "birdHide")
-//        locationManager.startMonitoringForRegion(region)
         
         
+        let birdHideRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.723313, longitude: -2.053055), identifier: "birdHideRegion")
+        locationsArray.append(birdHideRegion)
         
-//        let birdHide = myLocation(coord: CLLocationCoordinate2D(latitude: 50.723313, longitude: -2.053055), identifier: "birdHide")
-//        locationsArray.append(birdHide)
-//        
-//        let deadTree = myLocation(coord: CLLocationCoordinate2D(latitude: 50.722241, longitude: -2.050978),  identifier: "deadTree")
-//        locationsArray.append(deadTree)
-//        
-//        let stuckInARut = myLocation(coord: CLLocationCoordinate2D(latitude: 50.720192, longitude: -2.058198),  identifier: "stuckInARut")
-//        locationsArray.append(stuckInARut)
-//        
-//        let ironAgeHut = myLocation(coord: CLLocationCoordinate2D(latitude: 50.724758, longitude: -2.057954),  identifier: "ironAgeHut")
-//        locationsArray.append(ironAgeHut)
-//        
-//        let freeBirdSculpture = myLocation(coord: CLLocationCoordinate2D(latitude: 50.724247, longitude: -2.056046),  identifier: "freeBirdSculpture")
-//        locationsArray.append(freeBirdSculpture)
-//        
-//        let reception = myLocation(coord: CLLocationCoordinate2D(latitude: 50.72118, longitude: -2.056483),  identifier: "reception")
-//        locationsArray.append(reception)
-//        
-//        let potteryPavilion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.720601, longitude: -2.057801),  identifier: "potteryPavilion")
-//        locationsArray.append(potteryPavilion)
-//        
-//        let sensoryGarden = myLocation(coord: CLLocationCoordinate2D(latitude: 50.722221, longitude: -2.054502),  identifier: "sensoryGarden")
-//        locationsArray.append(sensoryGarden)
-//        
-//
-//        for location in locationsArray {
-//        locationManager.startMonitoringForRegion(location.region)
-//        }
+        let deadTreeRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.722241, longitude: -2.050978),  identifier: "deadTreeRegion")
+        locationsArray.append(deadTreeRegion)
+        
+        let stuckInARutRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.720192, longitude: -2.058198),  identifier: "stuckInARutRegion")
+        locationsArray.append(stuckInARutRegion)
+        
+        let ironAgeHutRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.724758, longitude: -2.057954),  identifier: "ironAgeHutRegion")
+        locationsArray.append(ironAgeHutRegion)
+        
+        let freeBirdSculptureRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.724247, longitude: -2.056046),  identifier: "freeBirdSculptureRegion")
+        locationsArray.append(freeBirdSculptureRegion)
+        
+        let receptionRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.72118, longitude: -2.056483),  identifier: "receptionRegion")
+        locationsArray.append(receptionRegion)
+        
+        let potteryPavilionRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.720601, longitude: -2.057801),  identifier: "potteryPavilionRegion")
+        locationsArray.append(potteryPavilionRegion)
+        
+        let sensoryGardenRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.722221, longitude: -2.054502),  identifier: "sensoryGardenRegion")
+        locationsArray.append(sensoryGardenRegion)
+        
+
+        for location in locationsArray {
+        locationManager.startMonitoringForRegion(location.region)
+        }
         
         
     }
@@ -179,12 +175,12 @@ extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
         print(region.identifier)
-        birdHideImg.image = UIImage(named:"Bird Hide Path")
+        birdHideImg.image = UIImage(named: region.identifier)
         
     }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){
-        birdHideImg.image = nil
+//        birdHideImg.image = nil
     }
     
 }
