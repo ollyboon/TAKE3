@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -171,15 +171,6 @@
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Variable path surface, some grassed areas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rH-i9-PSN">
-                                                                    <rect key="frame" x="31" y="52" width="288" height="37"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="288" id="eXj-7E-Tuf"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Undulating Terrain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U92-zz-itB">
                                                                     <rect key="frame" x="28" y="20" width="261" height="32"/>
                                                                     <constraints>
@@ -187,6 +178,15 @@
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                                                     <color key="textColor" red="0.47450980392156861" green="0.85882352941176465" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Variable path surface, some grassed areas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rH-i9-PSN">
+                                                                    <rect key="frame" x="31" y="37" width="279" height="56"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="279" id="eXj-7E-Tuf"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terrainImage1" translatesAutoresizingMaskIntoConstraints="NO" id="ygi-ZI-MI9">
@@ -202,10 +202,10 @@
                                                                 <constraint firstAttribute="trailing" secondItem="ygi-ZI-MI9" secondAttribute="trailing" id="R6U-gu-P6M"/>
                                                                 <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="70" id="RKu-Nz-SZ1"/>
                                                                 <constraint firstAttribute="bottom" secondItem="U92-zz-itB" secondAttribute="bottom" constant="81" id="VKZ-2E-cvW"/>
-                                                                <constraint firstItem="0rH-i9-PSN" firstAttribute="centerY" secondItem="ozA-qf-ZK2" secondAttribute="centerY" constant="4" id="fLy-rO-B8G"/>
+                                                                <constraint firstItem="0rH-i9-PSN" firstAttribute="centerY" secondItem="ozA-qf-ZK2" secondAttribute="centerY" constant="-1.5" id="fLy-rO-B8G"/>
                                                                 <constraint firstItem="vY3-2U-yXZ" firstAttribute="top" secondItem="ozA-qf-ZK2" secondAttribute="top" constant="2" id="lzE-wr-FmC"/>
                                                                 <constraint firstItem="0rH-i9-PSN" firstAttribute="leading" secondItem="ozA-qf-ZK2" secondAttribute="leading" constant="31" id="t0o-yz-AxZ"/>
-                                                                <constraint firstItem="0rH-i9-PSN" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="35" id="uzQ-Su-71E"/>
+                                                                <constraint firstItem="0rH-i9-PSN" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="20" id="uzQ-Su-71E"/>
                                                                 <constraint firstAttribute="bottom" secondItem="ygi-ZI-MI9" secondAttribute="bottom" id="xTy-sF-4Xe"/>
                                                                 <constraint firstItem="vY3-2U-yXZ" firstAttribute="leading" secondItem="ozA-qf-ZK2" secondAttribute="leadingMargin" constant="20" id="zta-tw-rmN"/>
                                                             </constraints>
@@ -394,6 +394,7 @@
                                             <outlet property="pathColor" destination="Zac-f7-1lZ" id="leD-ya-A1v"/>
                                             <outlet property="pathImage" destination="zXp-Ld-tfR" id="BrV-5j-TxM"/>
                                             <outlet property="terrainImage" destination="ygi-ZI-MI9" id="jXK-1G-fR6"/>
+                                            <outlet property="terrainTypeLable" destination="U92-zz-itB" id="YpK-uo-GH7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -462,7 +463,7 @@
         <image name="Signpost-50" width="25" height="25"/>
         <image name="green" width="56" height="22"/>
         <image name="mapRouteImage1" width="740" height="580"/>
-        <image name="terrainImage1" width="500" height="38"/>
+        <image name="terrainImage1" width="1000" height="77"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bPF-lQ-QEw"/>
