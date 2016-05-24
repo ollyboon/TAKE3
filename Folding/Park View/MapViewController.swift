@@ -171,20 +171,15 @@ extension MapViewController: MKMapViewDelegate {
 extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
         let newLocation = locations.last
-        
         if let newLocation = newLocation {
-            
+          print(newLocation)
         }
-        
-        func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
-            print(region.identifier)
-            birdHideImg.image = UIImage(named:"Bird Hide Path")
-            
-        }
-        
-        
+    }
+    
+    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
+        print(region.identifier)
+        birdHideImg.image = UIImage(named:"Bird Hide Path")
         
     }
     
