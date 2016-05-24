@@ -79,17 +79,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Q2E-jk-GHC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SN3-mX-tfi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="695"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-bw-GXo">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="582"/>
                                 <connections>
                                     <outlet property="delegate" destination="FvC-3f-f3K" id="GhM-gN-ibf"/>
                                 </connections>
                             </mapView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ojl-Q2-Qa1">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="695"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,7 +163,7 @@
                                                             <rect key="frame" x="0.0" y="309" width="574" height="133"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY3-2U-yXZ">
-                                                                    <rect key="frame" x="28" y="8" width="142" height="15"/>
+                                                                    <rect key="frame" x="28" y="2" width="142" height="15"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="142" id="Doq-eF-848"/>
                                                                     </constraints>
@@ -181,7 +181,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Undulating Terrain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U92-zz-itB">
-                                                                    <rect key="frame" x="28" y="31" width="261" height="22"/>
+                                                                    <rect key="frame" x="28" y="20" width="261" height="32"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="261" id="bcx-ke-Sip"/>
                                                                     </constraints>
@@ -195,17 +195,17 @@
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstItem="U92-zz-itB" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="8" symbolic="YES" id="1B1-oB-S4l"/>
+                                                                <constraint firstItem="U92-zz-itB" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="3" id="1B1-oB-S4l"/>
                                                                 <constraint firstItem="U92-zz-itB" firstAttribute="leading" secondItem="vY3-2U-yXZ" secondAttribute="leading" id="4VW-dd-lXh"/>
                                                                 <constraint firstItem="ygi-ZI-MI9" firstAttribute="leading" secondItem="ozA-qf-ZK2" secondAttribute="leading" id="7bm-3w-0KK"/>
                                                                 <constraint firstItem="ygi-ZI-MI9" firstAttribute="centerY" secondItem="ozA-qf-ZK2" secondAttribute="centerY" constant="43.5" id="QuY-ao-hM4"/>
                                                                 <constraint firstAttribute="trailing" secondItem="ygi-ZI-MI9" secondAttribute="trailing" id="R6U-gu-P6M"/>
-                                                                <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="64" id="RKu-Nz-SZ1"/>
-                                                                <constraint firstAttribute="bottom" secondItem="U92-zz-itB" secondAttribute="bottom" constant="80" id="VKZ-2E-cvW"/>
+                                                                <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="70" id="RKu-Nz-SZ1"/>
+                                                                <constraint firstAttribute="bottom" secondItem="U92-zz-itB" secondAttribute="bottom" constant="81" id="VKZ-2E-cvW"/>
                                                                 <constraint firstItem="0rH-i9-PSN" firstAttribute="centerY" secondItem="ozA-qf-ZK2" secondAttribute="centerY" constant="4" id="fLy-rO-B8G"/>
-                                                                <constraint firstItem="vY3-2U-yXZ" firstAttribute="top" secondItem="ozA-qf-ZK2" secondAttribute="top" constant="8" id="lzE-wr-FmC"/>
+                                                                <constraint firstItem="vY3-2U-yXZ" firstAttribute="top" secondItem="ozA-qf-ZK2" secondAttribute="top" constant="2" id="lzE-wr-FmC"/>
                                                                 <constraint firstItem="0rH-i9-PSN" firstAttribute="leading" secondItem="ozA-qf-ZK2" secondAttribute="leading" constant="31" id="t0o-yz-AxZ"/>
-                                                                <constraint firstItem="0rH-i9-PSN" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="29" id="uzQ-Su-71E"/>
+                                                                <constraint firstItem="0rH-i9-PSN" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="35" id="uzQ-Su-71E"/>
                                                                 <constraint firstAttribute="bottom" secondItem="ygi-ZI-MI9" secondAttribute="bottom" id="xTy-sF-4Xe"/>
                                                                 <constraint firstItem="vY3-2U-yXZ" firstAttribute="leading" secondItem="ozA-qf-ZK2" secondAttribute="leadingMargin" constant="20" id="zta-tw-rmN"/>
                                                             </constraints>
@@ -465,6 +465,6 @@
         <image name="terrainImage1" width="500" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AbD-ue-YXv"/>
+        <segue reference="bPF-lQ-QEw"/>
     </inferredMetricsTieBreakers>
 </document>
