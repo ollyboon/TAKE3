@@ -48,7 +48,7 @@ class MapViewController: UIViewController {
         mapView.region = mapregion
         
         addOverlay()
-        addPointPins()
+        //addPointPins()
         
         if route != nil {
             drawRoute()
