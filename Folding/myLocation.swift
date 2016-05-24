@@ -16,7 +16,7 @@ class myLocation {
     var identifier: String!
     
     var region: CLCircularRegion {
-        return CLCircularRegion(center: coord, radius: 100, identifier: identifier)
+        return CLCircularRegion(center: coord, radius: 50, identifier: identifier)
     
     }
     

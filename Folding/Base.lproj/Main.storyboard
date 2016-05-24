@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -28,11 +28,11 @@
             </objects>
             <point key="canvasLocation" x="-405" y="435"/>
         </scene>
-        <!--Settings-->
+        <!--About-->
         <scene sceneID="9uP-HP-rEO">
             <objects>
                 <navigationController id="jXR-tv-5jS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="Settings 3-52" id="Jin-i0-X9E"/>
+                    <tabBarItem key="tabBarItem" title="About" image="Info-64" id="Jin-i0-X9E"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PhC-Ta-8ax">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -452,9 +452,9 @@
     <resources>
         <image name="Go Button" width="68" height="68"/>
         <image name="Help-50" width="25" height="25"/>
+        <image name="Info-64" width="32" height="32"/>
         <image name="Map Marker-50" width="25" height="25"/>
         <image name="Sensory Path" width="300" height="300"/>
-        <image name="Settings 3-52" width="26" height="26"/>
         <image name="Signpost-50" width="25" height="25"/>
         <image name="green" width="56" height="22"/>
         <image name="mapRouteImage1" width="740" height="580"/>

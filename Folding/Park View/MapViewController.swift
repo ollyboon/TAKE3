@@ -181,6 +181,8 @@ extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){
 //        birdHideImg.image = nil
+        
+        
     }
     
 }
