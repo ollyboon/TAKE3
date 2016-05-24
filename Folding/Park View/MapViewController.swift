@@ -27,6 +27,8 @@ class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     var locationsArray = [myLocation]()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,7 +50,7 @@ class MapViewController: UIViewController {
         mapView.region = mapregion
         
         addOverlay()
-        //addPointPins()
+        addPointPins()
         
         if route != nil {
             drawRoute()
@@ -87,6 +89,8 @@ class MapViewController: UIViewController {
         
         
     }
+    
+    
     
     func drawRoute() {
         print(route?.name)
@@ -129,8 +133,11 @@ class MapViewController: UIViewController {
         mapView.addOverlay(overlay)
     }
     
+    
+    
 
 }
+
 
 
 extension MapViewController: MKMapViewDelegate {
@@ -170,17 +177,22 @@ extension MapViewController: CLLocationManagerDelegate {
           print(newLocation)
         }
     }
+   
+
     
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
         print(region.identifier)
         birdHideImg.image = UIImage(named: region.identifier)
         
-        
+        self.birdHideImg.center.y = self.birdHideImg.center.x - 700
         
     }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){
 //        birdHideImg.image = nil
+        
+        self.birdHideImg.center.y = self.birdHideImg.center.x + 700
+        
         
         
     }
