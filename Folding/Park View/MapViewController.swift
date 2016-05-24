@@ -172,7 +172,7 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let newLocation = locations.last
         if let newLocation = newLocation {
-          print(newLocation)
+         print(newLocation)
         }
     }
    
@@ -184,18 +184,22 @@ extension MapViewController: CLLocationManagerDelegate {
             birdHideImg.image = UIImage(named: region.identifier)
             
             birdHideImg.alpha = 0
+
             UIView.animateWithDuration(1.0){
                 self.birdHideImg.alpha = 0.92
                 
         
+
         }
+    }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){
         
         birdHideImg.image = nil
         
     
+
         }
+    
     }
 
-}

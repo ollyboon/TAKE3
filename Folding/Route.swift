@@ -69,7 +69,7 @@ func buildRoutes() -> [Route] {
         terrainInfo: "Easy accessibility from reception with road forming onto gravel paths.",
         terrainImage: "birdhideterrain@2",
         mapRouteImage: "mapRouteImage2",
-        color: UIColor(redX: 89, greenX: 137, blueX: 35, alphaX: 1),
+        color: UIColor(redX: 225, greenX: 229, blueX: 90, alphaX: 1),
         colorDiff: "green",
         terrainType: "Flat Terrain"
 
