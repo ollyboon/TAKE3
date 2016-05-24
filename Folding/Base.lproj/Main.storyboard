@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -159,7 +159,7 @@
                                                             <rect key="frame" x="0.0" y="309" width="574" height="133"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terrainImage1" translatesAutoresizingMaskIntoConstraints="NO" id="ygi-ZI-MI9">
-                                                                    <rect key="frame" x="0.0" y="73" width="574" height="60"/>
+                                                                    <rect key="frame" x="0.0" y="87" width="574" height="46"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY3-2U-yXZ">
                                                                     <rect key="frame" x="28" y="8" width="142" height="15"/>
@@ -194,12 +194,12 @@
                                                                 <constraint firstAttribute="trailing" secondItem="ygi-ZI-MI9" secondAttribute="trailing" id="06i-eU-CPX"/>
                                                                 <constraint firstItem="U92-zz-itB" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="8" symbolic="YES" id="1B1-oB-S4l"/>
                                                                 <constraint firstItem="U92-zz-itB" firstAttribute="leading" secondItem="vY3-2U-yXZ" secondAttribute="leading" id="4VW-dd-lXh"/>
-                                                                <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="ozA-qf-ZK2" secondAttribute="top" constant="73" id="9NA-LF-wkY"/>
-                                                                <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="50" id="QzV-CM-PVz"/>
+                                                                <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="ozA-qf-ZK2" secondAttribute="top" constant="87" id="9NA-LF-wkY"/>
+                                                                <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="64" id="QzV-CM-PVz"/>
                                                                 <constraint firstItem="0rH-i9-PSN" firstAttribute="centerY" secondItem="ozA-qf-ZK2" secondAttribute="centerY" constant="4" id="fLy-rO-B8G"/>
                                                                 <constraint firstItem="ygi-ZI-MI9" firstAttribute="leading" secondItem="ozA-qf-ZK2" secondAttribute="leading" id="fPZ-Hy-LPJ"/>
                                                                 <constraint firstItem="vY3-2U-yXZ" firstAttribute="top" secondItem="ozA-qf-ZK2" secondAttribute="top" constant="8" id="lzE-wr-FmC"/>
-                                                                <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="U92-zz-itB" secondAttribute="bottom" constant="20" id="pxL-AL-L1r"/>
+                                                                <constraint firstItem="ygi-ZI-MI9" firstAttribute="top" secondItem="U92-zz-itB" secondAttribute="bottom" constant="34" id="pxL-AL-L1r"/>
                                                                 <constraint firstItem="0rH-i9-PSN" firstAttribute="leading" secondItem="ozA-qf-ZK2" secondAttribute="leading" constant="31" id="t0o-yz-AxZ"/>
                                                                 <constraint firstAttribute="bottom" secondItem="ygi-ZI-MI9" secondAttribute="bottom" id="tB7-bh-MiI"/>
                                                                 <constraint firstItem="0rH-i9-PSN" firstAttribute="top" secondItem="vY3-2U-yXZ" secondAttribute="bottom" constant="29" id="uzQ-Su-71E"/>
