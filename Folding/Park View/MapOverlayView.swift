@@ -1,6 +1,8 @@
 import UIKit
 import MapKit
 
+//Here the file says we will be using an image for our map overlay creating a CGImage to be used in other files for the image overlay on the mapview.
+
 class MapOverlayView: MKOverlayRenderer {
     var overlayImage: UIImage
     

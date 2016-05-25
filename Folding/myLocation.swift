@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-
+//this custom class sets up the regions to include coordinates, radius and a name to be used in the mapviewcontroller.
 class myLocation {
     
     var coord: CLLocationCoordinate2D!

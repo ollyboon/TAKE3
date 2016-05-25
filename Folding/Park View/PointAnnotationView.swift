@@ -10,6 +10,8 @@ class PointAnnotationView: MKAnnotationView {
         super.init(frame: frame)
     }
     
+ //This file defines each annotation name and links it to the plist file. Also telling which image each pin should use.
+    
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         let pointAnnotation = self.annotation as! PointAnnotation

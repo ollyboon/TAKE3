@@ -26,7 +26,7 @@ class RouteCell: FoldingCell {
     @IBOutlet weak var MapeImage: UIImageView!
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var goButton: UIButton!
-    
+ //Defines sides, shadows and colour of the cells for the viewcontroller.
     override func awakeFromNib() {
         
         foregroundView.layer.cornerRadius = 5
@@ -43,7 +43,7 @@ class RouteCell: FoldingCell {
     @IBAction func showMap(sender: AnyObject) {
         delegate?.buttonTapped(goButton.tag)
     }
-    
+    //all info for cell is brought in here.
     func setUpCell() {
         infoTextField.userInteractionEnabled = false
         foldingNameLabel.text = route.foldingName
@@ -59,6 +59,7 @@ class RouteCell: FoldingCell {
         terrainTypeLable.text = route.terrainType
     }
     
+    //Defines times for flipping animation.
     
     override func animationDuration(itemIndex:NSInteger, type:AnimationType)-> NSTimeInterval {
         

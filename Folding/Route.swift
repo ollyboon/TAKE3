@@ -3,6 +3,8 @@
 import UIKit
 import CoreLocation
 
+//This file is a custom class for the each of the routes. It contains all the info for the routes to be displayed on the screen and in the table cells. 
+
 class Route {
     
     let name: String!

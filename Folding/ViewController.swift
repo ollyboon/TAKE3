@@ -9,6 +9,7 @@
 import UIKit
 import FoldingCell
 
+//This file defines the table cells for the routes tab view.
 
 class ViewController: UIViewController {
     
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
                 
     }
     
-    
+    //Segue for route to map view controller.
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "MapViewController" {
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
         
     }
     
-
+    //Functions for showing and hiding the help overlay image.
     @IBAction func showHelp(sender: AnyObject) {
         if overlay == nil {
             overlay = UIImageView(frame: tableView.frame)
@@ -70,6 +71,7 @@ class ViewController: UIViewController {
         }
     }
 
+    //functions for recognising and image tap for help overlay.
     func imageTapped() {
         if let overlay = overlay {
             overlay.removeFromSuperview()
@@ -80,12 +82,16 @@ class ViewController: UIViewController {
 
 }
 
+//delegeate for Route cell method.
+
 extension ViewController: RouteCellDelegate {
     func buttonTapped(tag: Int) {
         selectedRow = tag
         performSegueWithIdentifier("MapViewController", sender: nil)
     }
 }
+
+//Extension tells each cell where to get their data from (e.g. title, images).
 
 extension ViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -107,6 +113,8 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
+
+//Animations for opening and closing the cell.
 
 extension ViewController: UITabBarDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

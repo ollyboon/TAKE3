@@ -10,6 +10,8 @@ enum MapType: Int {
 
 }
 
+//This is our main view controller that controlls the map.
+
 
 class MapViewController: UIViewController {
     
@@ -31,7 +33,8 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        //Tells the map to center on holton lee as a starting point.
         
         let latDelta = holton.overlayTopLeftCoordinate.latitude -
             holton.overlayBottomRightCoordinate.latitude
@@ -40,11 +43,15 @@ class MapViewController: UIViewController {
         
         let mapregion = MKCoordinateRegionMake(holton.midCoordinate, span)
         
+        //Requests user position for the mapview and begins updating location.
+        
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
 
         mapView.region = mapregion
+        
+        //Calls functions from below to display the map overlay image and annotation pins.
         
         addOverlay()
         addPointPins()
@@ -53,8 +60,12 @@ class MapViewController: UIViewController {
             drawRoute()
         }
         
+        //When user location is used the map camera is set to follow the user.
+        
         mapView.setUserTrackingMode(.Follow, animated: true)
         
+        
+        //Defines each region in which information will pop up on screen.
         
         let birdHideRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.723313, longitude: -2.053055), identifier: "birdHideRegion")
         locationsArray.append(birdHideRegion)
@@ -80,7 +91,7 @@ class MapViewController: UIViewController {
         let sensoryGardenRegion = myLocation(coord: CLLocationCoordinate2D(latitude: 50.722221, longitude: -2.054502),  identifier: "sensoryGardenRegion")
         locationsArray.append(sensoryGardenRegion)
         
-
+        //Location services begins monitoring whether the user is in a region.
         for location in locationsArray {
         locationManager.startMonitoringForRegion(location.region)
         }
@@ -89,6 +100,7 @@ class MapViewController: UIViewController {
     }
     
     
+    //Function draws a MKPolyline over the map in order to display each route on the map.
     
     func drawRoute() {
         print(route?.name)
@@ -109,6 +121,7 @@ class MapViewController: UIViewController {
         mapView.addOverlay(myPolyline)
     }
 
+    //This function defines each aspect of the pins including the information within the callouts.
     
     func addPointPins() {
         let filePath = NSBundle.mainBundle().pathForResource("PointsOfInterest", ofType: "plist")
@@ -125,7 +138,7 @@ class MapViewController: UIViewController {
         }
     }
     
-    
+    //Function calling the mapoverlay in the Holton.swift file.
     func addOverlay() {
         let overlay = MapOverlay(holton: holton)
         mapView.addOverlay(overlay)
@@ -136,7 +149,7 @@ class MapViewController: UIViewController {
 
 }
 
-
+//Extension for the mapview delegate. Defines the image used for the map overlay and the colours of each polyline as they are rendered on the map.
 
 extension MapViewController: MKMapViewDelegate {
     
@@ -156,6 +169,8 @@ extension MapViewController: MKMapViewDelegate {
         return MKOverlayRenderer()
     }
     
+    //adds annotations to mapview
+    
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if !annotation.isKindOfClass(MKUserLocation) {
             let annotationView = PointAnnotationView(annotation: annotation, reuseIdentifier: "Interest")
@@ -167,6 +182,8 @@ extension MapViewController: MKMapViewDelegate {
     
 }
 
+//Extension for our info popups when user enters a region as defined earlier in the file
+
 extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -177,6 +194,7 @@ extension MapViewController: CLLocationManagerDelegate {
     }
    
 
+    //When a user enters a region it displays the relevant info and animates in with a fade
     
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion){
         print(region.identifier)
@@ -193,6 +211,7 @@ extension MapViewController: CLLocationManagerDelegate {
         }
     }
     
+    //upon region exit the image view will no longer display an image.
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion){
         
         birdHideImg.image = nil

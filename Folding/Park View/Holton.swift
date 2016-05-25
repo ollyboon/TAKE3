@@ -3,6 +3,8 @@ import MapKit
 
 class Holton {
     
+    //This file reads the holton.plist file for the coordinates of the area our map will cover. It calculates the final position for the borrtom right coordinate using the first three coordinates provided in the plist file.
+    
     var midCoordinate: CLLocationCoordinate2D
     var overlayTopLeftCoordinate: CLLocationCoordinate2D
     var overlayTopRightCoordinate: CLLocationCoordinate2D
