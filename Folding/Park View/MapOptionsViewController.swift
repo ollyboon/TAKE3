@@ -1,4 +1,12 @@
 import UIKit
+//
+//  myLocation.swift
+//  Folding
+//
+//  Created by Olly Boon on 15/05/2016.
+//  Copyright © 2016 Olly Boon. All rights reserved.
+//
+
 
 enum MapOptionsType: Int {
   case MapOverlay = 0

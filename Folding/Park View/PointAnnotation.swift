@@ -1,4 +1,10 @@
-//comment
+//
+//  myLocation.swift
+//  Folding
+//
+//  Created by Amy Wichelow on 22/05/2016.
+//  Copyright © 2016 Amy Wichelow. All rights reserved.
+//
 
 import UIKit
 import MapKit

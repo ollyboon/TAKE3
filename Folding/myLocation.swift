@@ -3,7 +3,7 @@
 //  Folding
 //
 //  Created by Hallam John Ager on 23/05/2016.
-//  Copyright © 2016 Kyle Goslan. All rights reserved.
+//  Copyright © 2016 Hallam John Ager. All rights reserved.
 //
 
 import Foundation

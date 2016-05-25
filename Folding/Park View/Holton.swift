@@ -1,3 +1,11 @@
+//
+//  myLocation.swift
+//  Folding
+//
+//  Created by Olly Boon on 03/05/2016.
+//  Copyright © 2016 Olly Boon. All rights reserved.
+//
+
 import Foundation
 import MapKit
 

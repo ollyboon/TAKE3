@@ -1,4 +1,10 @@
-
+//
+//  myLocation.swift
+//  Folding
+//
+//  Created by Hallam John Ager on 22/05/2016.
+//  Copyright © 2016 Hallam John Ager. All rights reserved.
+//
 
 import UIKit
 import CoreLocation
